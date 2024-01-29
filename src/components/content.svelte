@@ -1,7 +1,15 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { useFlag } from "@unleash/proxy-client-svelte";
 
-  $: language = useFlag("regional");
+  $: language = false;
+  $: regionalFlag = useFlag("regional");
+
+  onMount(() => {
+    regionalFlag.subscribe((val) => {
+      language = val;
+    });
+  });
 </script>
 
 {#if language}
