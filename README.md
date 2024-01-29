@@ -1,38 +1,30 @@
-# create-svelte
+<!-- <a href="https://dev.to/reeshee/how-to-implement-feature-flags-in-astro-using-unleash-2fg5">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/530o6ba6f438cuklmyxw.png" />
+</a> -->
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+# How to Implement Feature Flags in SvelteKit using Unleash
 
-## Creating a project
+<a href="#introduction"><strong>Introduction</strong></a> · <a href="#tech-stack"><strong>Tech Stack</strong></a> · <a href="#author"><strong>Author</strong></a>
+<br/>
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Introduction
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+A demo of Feature Flags with [SvelteKit](https://kit.svelte.dev) and [Unleash](https://getunleash.io).
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Tech Stack
 
-## Developing
+### Frameworks
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- [SvelteKit](https://kit.svelte.dev) – Framework
 
-```bash
-npm run dev
+### Platforms
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- [Unleash](https://getunleash.io) – Feature Flags Management
 
-## Building
+### Code Quality
 
-To create a production version of your app:
+- [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
 
-```bash
-npm run build
-```
+## Author
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- Rishi Raj Jain ([@rishi_raj_jain_](https://twitter.com/rishi_raj_jain_))
