@@ -1,7 +1,12 @@
 <script lang="ts">
   /** @type {import('./$types').PageData} */
   export let data;
+
   import { countryCodeMap } from "$lib";
+
+  // use the dynamic country's region 2 letter code
+  const language = countryCodeMap[data.region];
+
   const unleashConfig = {
     // How often (in seconds) the client should poll the proxy for updates
     refreshInterval: 1,
@@ -11,7 +16,8 @@
     url: "http://localhost:4242/api/frontend",
     // A client-side API token OR one of your proxy's designated client keys (previously known as proxy secrets)
     clientKey: "default:development.unleash-insecure-frontend-api-token",
-    context: { properties: { region: countryCodeMap[data.region] } },
+    // create custom Unleash context
+    context: { properties: { region: language } },
     // To test if the value should be returned false, uncomment below and comment above line
     // context: { properties: { region: "OP" } },
   };
@@ -20,5 +26,5 @@
 </script>
 
 <FlagProvider config={unleashConfig}>
-  <Content />
+  <Content {language} />
 </FlagProvider>
