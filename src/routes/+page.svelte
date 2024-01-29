@@ -1,7 +1,6 @@
 <script lang="ts">
   /** @type {import('./$types').PageData} */
   export let data;
-  console.log(data.region)
   import { countryCodeMap } from "$lib";
   const unleashConfig = {
     // How often (in seconds) the client should poll the proxy for updates
