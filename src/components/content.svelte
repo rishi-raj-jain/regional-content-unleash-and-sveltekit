@@ -1,19 +1,21 @@
 <script lang="ts">
+  export let language: string;
+
   import { onMount } from "svelte";
   import { useFlag } from "@unleash/proxy-client-svelte";
 
-  $: language = false;
+  $: isRegionTranslated = false;
   $: regionalFlag = useFlag("regional");
 
   onMount(() => {
     regionalFlag.subscribe((val) => {
-      language = val;
+      isRegionTranslated = val;
     });
   });
 </script>
 
-{#if language}
-  <span>Show content in HI</span>
+{#if isRegionTranslated}
+  <span>Show content in {language}</span>
 {:else}
-  <span>Fallback Content</span>
+  <span>Fallback content</span>
 {/if}
