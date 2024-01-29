@@ -1,4 +1,6 @@
 <script lang="ts">
+  /** @type {import('./$types').PageData} */
+  export let data;
   import { countryCodeMap } from "$lib";
   const unleashConfig = {
     // How often (in seconds) the client should poll the proxy for updates
@@ -9,7 +11,7 @@
     url: "http://localhost:4242/api/frontend",
     // A client-side API token OR one of your proxy's designated client keys (previously known as proxy secrets)
     clientKey: "default:development.unleash-insecure-frontend-api-token",
-    context: { properties: { region: countryCodeMap["US"] } },
+    context: { properties: { region: countryCodeMap[data.region] } },
     // To test if the value should be returned false, uncomment below and comment above line
     // context: { properties: { region: "OP" } },
   };
