@@ -21,6 +21,8 @@ A demo of Feature Flags with [SvelteKit](https://kit.svelte.dev) and [Unleash](h
 
 - [Unleash](https://getunleash.io) – Feature Flags Management
 
+- [Vercel](https://vercel.com) – Hosting
+
 ### Code Quality
 
 - [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
