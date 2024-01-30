@@ -50,9 +50,9 @@
         />
         <div class="divide-y divide-gray-300/50">
           <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
-            <p>This is an example of using SvelteKit with Unleash Client SDK.</p>
+            <p>This is an example of using SvelteKit with Unleash's Svelte SDK.</p>
             <p>
-              If you're country's native language is supported in our <span class="bg-gray-100 px-1 rounded">regional</span> flag set
+              If your country's native language is supported in our <span class="bg-gray-100 px-1 rounded">regional</span> flag set
               by the demo
               <span class="bg-green-900 text-white px-1 rounded">Unleash</span>
               instance, you'd see the translation below, else <span class="bg-red-100 px-1 rounded">fallback content</span> would be visible 👇🏻
